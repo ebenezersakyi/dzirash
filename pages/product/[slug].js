@@ -20,16 +20,16 @@ const ProductDetails = ({ product, products }) => {
 
   return (
     <div>
-       <Link href="/">
-        <button
-          type="button"
-          className="cart-heading"
-        >
-            <AiOutlineLeft />
-            <span className="heading">back</span>
-        </button>
-       </Link>
       <div className="product-detail-container">
+        <Link href="/">
+          <button
+            type="button"
+            className="cart-heading"
+          >
+              <AiOutlineLeft />
+              <span className="heading">back</span>
+          </button>
+        </Link>
         <div>
           <div className="image-container">
             <img src={urlFor(image && image[index])} className="product-detail-image" />

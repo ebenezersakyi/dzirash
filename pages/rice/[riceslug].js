@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 
 import { client, urlFor } from '../../lib/client';
-import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar, AiOutlineLeft } from 'react-icons/ai';
 import { Product, Rice } from '../../components';
+import Link from 'next/link';
 
 import { useStateContext } from '../../context/StateContext'
 
@@ -19,6 +20,15 @@ const ProductDetails = ({ product, products }) => {
 
   return (
     <div>
+      <Link href="/">
+        <button
+          type="button"
+          className="cart-heading"
+        >
+            <AiOutlineLeft />
+            <span className="heading">back</span>
+        </button>
+       </Link>
       <div className="product-detail-container">
         <div>
           <div className="image-container">

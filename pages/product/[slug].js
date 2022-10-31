@@ -20,7 +20,6 @@ const ProductDetails = ({ product, products }) => {
 
   return (
     <div>
-      <div className="product-detail-container">
         <Link href="/">
           <button
             type="button"
@@ -30,6 +29,7 @@ const ProductDetails = ({ product, products }) => {
               <span className="heading">back</span>
           </button>
         </Link>
+      <div className="product-detail-container">
         <div>
           <div className="image-container">
             <img src={urlFor(image && image[index])} className="product-detail-image" />

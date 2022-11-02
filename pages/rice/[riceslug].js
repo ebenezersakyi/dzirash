@@ -26,7 +26,7 @@ const ProductDetails = ({ product, products }) => {
             className="cart-heading"
           >
               <AiOutlineLeft />
-              <span className="heading">back</span>
+              <span className="heading">Back</span>
           </button>
         </Link>
       <div className="product-detail-container">
